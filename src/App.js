@@ -1,23 +1,54 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import logo from './logo.svg';
-import './App.css';
 
-import Home from './pages/Home.jsx';
+import Main from './components/main';
 
-class App extends Component {
-  render() {
-    return (
-      
-      <Router>
-        <div>
-          <Route exact path="/" component={Home}/>
+import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+import { Link } from 'react-router-dom';
+import './app.css';
 
-        </div>
-      </Router>
 
-    );
-  }
+class App extends React.Component {
+	render () {
+		return (
+			<div>
+
+				{/* Uses Link transparent header that draws on top of the layout's background */}
+				<div style={{height: '700px', position: 'relative'}}>
+				    <Layout >
+				        <Header transparent title="" style={{color: '#000'}}>
+				            <Navigation>
+				            	<Link to="/"> HOME</Link> 
+				                <Link to="/watch"> WATCH </Link>
+				                <Link to="/watch"> MEMBERS </Link>
+				                <Link to="/"> BLOG </Link>
+				                <Link to="/projects"> PLAY </Link>
+				                <Link to="/projects"> SHOP </Link>
+				            </Navigation>
+				        </Header>
+				        <Drawer title="">
+
+				            <Navigation>
+				            	<Link to="/"> HOME</Link> 
+				                <Link to="/resume"> WATCH </Link>
+				                <Link to="/watch"> MEMBERS </Link>
+				                <Link to="/projects"> BLOG </Link>
+				                <Link to="/projects"> PLAY </Link>
+				                <Link to="/projects"> SHOP </Link>
+				            </Navigation>
+				        </Drawer>
+
+
+				        <Content />
+				    </Layout>
+				</div>
+				<Main />
+
+
+			</div> 
+
+
+			);
+	}
 }
 
-export default App;
+export default App; 
