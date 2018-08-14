@@ -1,45 +1,74 @@
 
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
 body {
   margin: 0;
   padding: 0;
   text-align: center; 
   background: white;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+}
+
+.backdrop {
+	background: url("https://ih0.redbubble.net/image.435226995.7543/flat,750x1000,075,t.u1.jpg");
+	background-repeat: repeat;
+	min-height: 700px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+
 }
 
 .panel {
-	background: white;
-	margin-top: 10px;
-	margin-bottom: 50px;
-	padding: 40px;
-	opacity: 0.8;
+	background: #ffe6e9	;
+	margin-left: 375px;
+	margin-right: 375px;
+
+
+	opacity: 0.9;
 	font-family: 'Gloria Hallelujah', cursive;
 
 
 }
 
-.container { 
-	padding: 75px; 
+.blur {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+
+}
+
+.blur:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .box {
-	background: silver; 
 	padding: 0px;
 	font-family: 'Gloria Hallelujah', cursive;
 
 }
 
+.fancy-font {
+	font-family: 'Poiret One', cursive;
+
+}
 
 .italics {
 	font-style: italic;
-	color:silver;
-}
-.recent-projects {
-	color: green;
+	color: gray;
 }
 
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 
 

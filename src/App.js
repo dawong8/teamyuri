@@ -25,13 +25,13 @@ class App extends React.Component {
 				        <Header transparent title=" " style={{color: '#000'}}>
 
 				            <Navigation>
-				            	<Link to="/"> <Button> HOME </Button> </Link> 
-				                <Link to="/watch"> <Button> WATCH </Button> </Link>
+				            	<Link to="/"> <Button> <p className="box"> HOME </p> </Button> </Link> 
+				                <Link to="/watch"> <Button> <p className="box"> WATCH </p> </Button> </Link>
 				                <Link to="#">  <Popup />  </Link>
 
-				                <Link to="/"> <Button> BLOG </Button> </Link>
-				                <Link to="/projects"> <Button> PLAY </Button> </Link>
-				                <Link to="/projects"> <Button> SHOP </Button> </Link>
+				                <Link to="/"> <Button> <p className="box"> BLOG </p> </Button> </Link>
+				                <Link to="/projects"> <Button> <p className="box"> PLAY </p> </Button> </Link>
+				                <Link to="/projects"> <Button> <p className="box"> SHOP</p>  </Button> </Link>
 				            </Navigation>
 				        </Header>
 				        

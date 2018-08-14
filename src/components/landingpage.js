@@ -32,17 +32,77 @@ class LandingPage extends Component {
 						<Slideshow />
 					</div>
 
-					{/* Members */}
-					<div className="container">
-						<div style={{width: '80%', margin: 'auto'}}>
-						    
-							<div className="box"> 
-							    <p> Latest Videos</p>
-							</div>
-						    <Grid>
-						    	
 
-								
+
+					{/* About */}
+					<div className="backdrop"> 
+						<div style={{padding:'50px'}}> 
+							<div className="panel" style={{padding:'50px'}}> 
+								<img style={{width: '10%', height:'auto' }} src={require('../images/yuri.png')} />
+
+								<p style={{ fontSize: '35px'}}> Message from Yuri </p>
+								<p className="italics"> Under the sun.</p>
+
+								<br /> 
+								<p style={{width: '75%', margin: 'auto'}}> 
+								I am Yuri. I started streaming a few years ago and I came to realize that the community was a lot more toxic than it had to be. I always thought a little trolling is funny, friendly banters spice up conversations and a little sarcasm could be appreciated. That wasn’t what I experienced as a streamer. I’ve had people attack me for the way I look, the way I sound and people who legitimately would not stop harassing me. I came to realize that there is a part of this gaming universe I escape to that’s simply unsafe and unkind. That’s when I decided, I’m going to start my own community. One where people like myself could escape to and find solace without being afraid to show everyone who they really are. I brought together a group of very talented people to start a movement.				</p>
+
+							</div>
+						</div>
+					</div>
+
+					{/* Members */}
+					<div className="">
+						<div style={{width: '80%', margin: 'auto'}}>
+						    <div className="fancy-font" > 
+							    <p style={{fontSize:'35px'}}> Meet the Members</p>	 
+							</div>
+						    <Grid style={{paddingBottom:'120px'}}>
+
+						        <Cell col={2}>
+
+									<img className="blur" style={{width: '75%', height:'85%' }} src={'https://pre00.deviantart.net/b6a2/th/pre/f/2018/189/d/1/2_by_edalie_chan-dcgo1uh.png'} />
+						        </Cell>
+						        <Cell col={2}>
+
+									<img className="blur" style={{width: '75%', height:'95%' }} src={('https://pre00.deviantart.net/0694/th/pre/f/2018/189/d/2/1_by_edalie_chan-dcgo1vg.png')} />
+						        </Cell><Cell col={2}>
+
+									<img className="blur" style={{width: '75%', height:'85%' }} src={('https://pre00.deviantart.net/2331/th/pre/f/2018/189/a/2/4_by_edalie_chan-dcgo1t6.png')} />
+						        </Cell><Cell col={2}>
+
+									<img className="blur" style={{width: '75%', height:'85%' }} src={('https://pre00.deviantart.net/4df6/th/pre/f/2018/189/a/a/3_by_edalie_chan-dcgo1tp.png')} />
+						        </Cell><Cell col={2}>
+
+									<img className="blur" style={{width: '75%', height:'85%' }} src={require('../images/jayden.png')} />
+						        </Cell>
+						        <Cell col={2}>
+
+									<img className="blur" style={{width: '75%', height:'75%' }} src={require('../images/ann.png')} />
+						        </Cell>
+								<Cell col={2}>
+									<p className="box"> SUGAR </p>
+						        </Cell>
+								<Cell col={2}>
+									<p className="box"> YURI </p>
+						        </Cell><Cell col={2}>
+									<p className="box"> CLIP </p>
+						        </Cell><Cell col={2}>
+									<p className="box"> MOMO </p>
+						        </Cell><Cell col={2}>
+									<p className="box"> JAYDEN </p>
+						        </Cell><Cell col={2}>
+									<p className="box"> TRAGEDY </p>
+						        </Cell>
+						    </Grid>	
+
+
+							{/* Videos */ }
+							<div className="box" > 
+							    <p style={{fontSize:'35px'}}> Latest Videos</p>	 
+							</div>
+						    <Grid style={{paddingBottom:'150px'}}>
+
 						        <Cell col={6}>
 
 									<iframe width="100%" height="315" src="https://www.youtube.com/embed/lvAE8s9RkW8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -53,7 +113,44 @@ class LandingPage extends Component {
 						        </Cell>
 
 
-						    </Grid>			
+						    </Grid>		
+
+
+
+						    <Grid style={{paddingBottom:'20px'}}> 
+						    	<Cell col={4}>
+
+									<div className="fancy-font" > 
+									    <p style={{fontSize:'35px'}}> Shop </p>	 
+									</div>
+								</Cell>
+								<Cell col={4}>
+
+									<div className="fancy-font" > 
+									    <p style={{fontSize:'35px'}}> Games </p>	 
+									</div>
+								</Cell>
+								<Cell col={4}>
+
+									<div className="fancy-font" > 
+									    <p style={{fontSize:'35px'}}> Blog </p>	 
+									</div>
+								</Cell>
+								<Cell col={4}>
+
+									<img style={{width: '100%', height:'100%' }} src={'https://static1.squarespace.com/static/5782ae45414fb585ab372cbd/5a79f940f9619a6fa1424052/5a79f943c83025d6ef23ba21/1517944934814/tshirt.jpg?format=300w'} />
+						        </Cell><Cell col={4}>
+
+									<img style={{width: '70%', height:'70%' }} src={('https://i.ebayimg.com/images/g/GFIAAOSwxcRW9DVC/s-l300.jpg')} />
+						        </Cell><Cell col={4}>
+
+									<img style={{width: '70%', height:'70%' }} src={('https://static1.squarespace.com/static/59f217ff6f4ca3b7ef20c7f7/59f272480d9297adf930e3dc/59f2737764265f30648cc12e/1527713426859/Nonfiction-Pen-Paper-Writing-Workshops-fountain-pen-notebook.jpg?format=300w')} />
+						        </Cell>
+
+						    </Grid>
+
+						    
+						    	
 						</div>
 					</div>
 
@@ -61,22 +158,7 @@ class LandingPage extends Component {
 
 
 
-					{/* About */}
-
-					<div className="panel"> 
-
-						<h3> TEAM YURI </h3>
-						<p className="italics"> Under the sun.</p>
-						<img style={{width: '50%', height:'auto' }} src={require('../images/team.png')} />
-						<br /> 
-						<br />
-						<p style={{width: '75%', margin: 'auto'}}> 
-						I am Yuri. I started streaming a few years ago and I came to realize that the community was a lot more toxic than it had to be. I always thought a little trolling is funny, friendly banters spice up conversations and a little sarcasm could be appreciated. That wasn’t what I experienced as a streamer. I’ve had people attack me for the way I look, the way I sound and people who legitimately would not stop harassing me. I came to realize that there is a part of this gaming universe I escape to that’s simply unsafe and unkind. That’s when I decided, I’m going to start my own community. One where people like myself could escape to and find solace without being afraid to show everyone who they really are. I brought together a group of very talented people to start a movement. We call it “Under the Sun”. We decided to become a collaborative channel and be known as Team Yuri. We want to reach out and shape our own little community where people get to meet people and you will be accepted for who you are. A place where regardless of your race, religion and sexual orientation, you will belong. Because there is only one race under the sun — The human race. We want to reach out to people through our content and influence people one at a time. So if you ever feel like you could use a friend or just someone to talk to, you know where we’ll be. If you feel like you don’t belong, then come to us. Because with us, you’ll always feel like you have someone to lean on and a place you can fit in.
-
-						</p>
-
-					</div>
-
+					
 
 
 

@@ -28,9 +28,9 @@ class Popup extends React.Component {
   render() {
     return (
       <div>
-        <Button  onClick={this.handleOpenDialog} ripple>Members</Button>
+        <Button  onClick={this.handleOpenDialog} ripple> <p className="box"> Members </p></Button>
         <Dialog open={this.state.openDialog} onCancel={this.handleCloseDialog}>
-          <DialogTitle> <p> Which one? </p> </DialogTitle>
+          <DialogTitle> <p className="box"> Which one? </p> </DialogTitle>
           <DialogContent>
             <Link to="/resume" style={{ textDecoration: 'none', color:'black' }}> <img onClick={this.handleCloseDialog} style={{padding:'10px', width:'25%'}}src={require('../images/yuri.png')}/> Yuri</Link> <br/>         
             <Link to="/resume" style={{ textDecoration: 'none', color:'black' }}> <img onClick={this.handleCloseDialog} style={{padding:'10px', width:'25%'}}src={require('../images/clip.png')}/> Clip </Link> <br/>         
