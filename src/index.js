@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 
-import App from './app';
+import App from './app.js';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import { BrowserRouter } from 'react-router-dom';
