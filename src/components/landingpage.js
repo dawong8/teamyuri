@@ -1,6 +1,6 @@
 import React, { Component } from 'react'; 
 import { Slide } from 'react-slideshow-image';
-import { Cell, Grid, Button, Card, CardTitle, CardText} from 'react-mdl';
+import { Cell, Grid} from 'react-mdl';
 
 
 const images = [
