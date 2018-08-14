@@ -1,27 +1,37 @@
 
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 
 body {
   margin: 0;
   padding: 0;
   text-align: center; 
-  background: url(./images/rainbow.png);
+  background: white;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .panel {
 	background: white;
-	height: 700px;
-	padding: 50px;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	padding: 40px;
+	opacity: 0.8;
+	font-family: 'Gloria Hallelujah', cursive;
+
+
 }
 
+.container { 
+	padding: 75px; 
+}
 
-
-h3 {
-	color: gray;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+.box {
+	background: silver; 
+	padding: 0px;
+	font-family: 'Gloria Hallelujah', cursive;
 
 }
+
 
 .italics {
 	font-style: italic;
@@ -30,4 +40,6 @@ h3 {
 .recent-projects {
 	color: green;
 }
+
+
 

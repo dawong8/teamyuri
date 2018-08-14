@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 
 import Main from './components/main';
+import Popup from './components/popup';
 
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+
+import { Layout, Header, Navigation, Drawer, Content, Button, Footer, FooterSection, FooterLinkList } from 'react-mdl';
 import { Link } from 'react-router-dom';
 import './app.css';
+
 
 
 class App extends React.Component {
@@ -13,37 +16,42 @@ class App extends React.Component {
 			<div>
 
 				{/* Uses Link transparent header that draws on top of the layout's background */}
-				<div style={{height: '700px', position: 'relative'}}>
+				<div style={{height: '50px', position: 'relative'}}>
+					
+					{/*<Link to="/"> <img style={{width:'4%', padding:'15px', float:'left'}}src={require('./images/yuri.png')}/> </Link>*/}
+
+
 				    <Layout >
-				        <Header transparent title="" style={{color: '#000'}}>
-				            <Navigation>
-				            	<Link to="/"> HOME</Link> 
-				                <Link to="/watch"> WATCH </Link>
-				                <Link to="/watch"> MEMBERS </Link>
-				                <Link to="/"> BLOG </Link>
-				                <Link to="/projects"> PLAY </Link>
-				                <Link to="/projects"> SHOP </Link>
-				            </Navigation>
-				        </Header>
-				        <Drawer title="">
+				        <Header transparent title=" " style={{color: '#000'}}>
 
 				            <Navigation>
-				            	<Link to="/"> HOME</Link> 
-				                <Link to="/resume"> WATCH </Link>
-				                <Link to="/watch"> MEMBERS </Link>
-				                <Link to="/projects"> BLOG </Link>
-				                <Link to="/projects"> PLAY </Link>
-				                <Link to="/projects"> SHOP </Link>
+				            	<Link to="/"> <Button> HOME </Button> </Link> 
+				                <Link to="/watch"> <Button> WATCH </Button> </Link>
+				                <Link to="#">  <Popup />  </Link>
+
+				                <Link to="/"> <Button> BLOG </Button> </Link>
+				                <Link to="/projects"> <Button> PLAY </Button> </Link>
+				                <Link to="/projects"> <Button> SHOP </Button> </Link>
 				            </Navigation>
-				        </Drawer>
+				        </Header>
+				        
 
 
 				        <Content />
 				    </Layout>
 				</div>
+
 				<Main />
 
 
+				<Footer size="mini">
+				    <FooterSection type="left" logo="Team Yuri">
+				        <FooterLinkList>
+				            <Link to="/">Help</Link>
+				            <Link to="/">Privacy & Terms</Link>
+				        </FooterLinkList>
+				    </FooterSection>
+				</Footer>
 			</div> 
 
 
